@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>To do list</title>
+    <link rel="stylesheet" href="styles.css">
+<!--    <link rel="stylesheet" href="styles_slider.css">-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+<!--    <div class="slider">-->
+<!--        <div class="slider__body">-->
+<!--            <div-->
+<!--                    class="slide"-->
+<!--                    style="background-image: url('https://media.istockphoto.com/photos/single-fresh-raw-clean-isolated-one-alone-horizontally-oriented-on-picture-id1266340637?b=1&k=20&m=1266340637&s=170667a&w=0&h=m215bqBaJETpZ5Tuyl2dhIdcfqpecCxBM7tXyAZzmn8=');"-->
+<!--            >-->
+<!--                <h3>Banana</h3>-->
+<!--            </div>-->
+<!--            <div-->
+<!--                    class="slide"-->
+<!--                    style="-->
+<!--              background-image: url('https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');-->
+<!--            "-->
+<!--            >-->
+<!--                <h3>Apple</h3>-->
+<!--            </div>-->
+<!--            <div-->
+<!--                    class="slide"-->
+<!--                    style="-->
+<!--              background-image: url('https://images.unsplash.com/photo-1603664454146-50b9bb1e7afa?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fG9yYW5nZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');-->
+<!--            "-->
+<!--            >-->
+<!--                <h3>Orange</h3>-->
+<!--            </div>-->
+<!--            <div-->
+<!--                    class="slide"-->
+<!--                    style="-->
+<!--              background-image: url('https://media.istockphoto.com/photos/pears-picking-in-portugal-picture-id1267585548?b=1&k=20&m=1267585548&s=170667a&w=0&h=e2Jcn2gJlIgkNiGMLsPqNg4GEsD71jRgWI0ApspiP0E=');-->
+<!--            "-->
+<!--            >-->
+<!--                <h3>Pear</h3>-->
+<!--            </div>-->
+<!--            <div-->
+<!--                    class="slide"-->
+<!--                    style="-->
+<!--              background-image: url('https://media.istockphoto.com/photos/lemon-with-clipping-path-picture-id155376515?b=1&k=20&m=155376515&s=170667a&w=0&h=TBwJFL9VRaiPye15s0A_YenyBXTjcvhyPXA8tMMgyq0=');-->
+<!--            "-->
+<!--            >-->
+<!--                <h3>Lemon</h3>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--    </div>-->
+
+    <div class="container__todo">
+            <h1> TO-DO LIST <i id="pencil" class="fas fa-pencil-alt"></i> </h1>
+
+            <div class="nav">
+                <nav class="nav__inner">
+                    <div class="nav__link" id="month">Month</div>
+                    <div class="nav__link" id="week">Week</div>
+                    <div class="nav__link" id="day">Day</div>
+                </nav>
+
+                <div class="result">Result</div>
+            </div>
+
+
+            <input type = "text" placeholder="Add New Todo">
+
+            <ul class="todos">
+                <li><span><i class="fas fa-trash-alt"></i></span>Go to the salon</li>
+
+            </ul>
+
+            <div id= "buttons">
+                <button class="save">Save</button>
+                <button class="clear">Clear</button>
+                <button class="tipBtn">Tips</button>
+            </div>
+
+            <div id = "overlay">
+                <a href="javascript:void(0)" class="closeBtn">&times;</a>
+                <ul class="tips">
+                    <li>Click on the pencil to hide or show input area</li>
+                    <li>Type text into input area and press enter to add todo to list</li>
+                    <li>Hover over the todo and click the on trash can to delete</li>
+                    <li>Click the clear button to clear all todos from list</li>
+                    <li>Click the Save button to save your todos to access them later even if you exit the browser </li>
+                </ul>
+            </div>
+
+            <div class="year">
+                <a href="javascript:void(0)" class="closeBtn">&times;</a>
+                <ul class="tips">
+                    <li>Click on the pencil to hide or show input area</li>
+                    <li>Type text into input area and press enter to add todo to list</li>
+                    <li>Hover over the todo and click the on trash can to delete</li>
+                    <li>Click the clear button to clear all todos from list</li>
+                    <li>Click the Save button to save your todos to access them later even if you exit the browser </li>
+                </ul>
+            </div>
+
+
+    </div>
+
+<!--    <div class="slider">-->
+<!--        <div class="slider__body">-->
+<!--            <div-->
+<!--                    class="slides"-->
+<!--                    style="background-image: url('https://media.istockphoto.com/photos/single-fresh-raw-clean-isolated-one-alone-horizontally-oriented-on-picture-id1266340637?b=1&k=20&m=1266340637&s=170667a&w=0&h=m215bqBaJETpZ5Tuyl2dhIdcfqpecCxBM7tXyAZzmn8=');"-->
+<!--            >-->
+<!--                <h3>Banana</h3>-->
+<!--            </div>-->
+<!--            <div-->
+<!--                    class="slides"-->
+<!--                    style="-->
+<!--              background-image: url('https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');-->
+<!--            "-->
+<!--            >-->
+<!--                <h3>Apple</h3>-->
+<!--            </div>-->
+<!--            <div-->
+<!--                    class="slides"-->
+<!--                    style="-->
+<!--              background-image: url('https://images.unsplash.com/photo-1603664454146-50b9bb1e7afa?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fG9yYW5nZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');-->
+<!--            "-->
+<!--            >-->
+<!--                <h3>Orange</h3>-->
+<!--            </div>-->
+<!--            <div-->
+<!--                    class="slides"-->
+<!--                    style="-->
+<!--              background-image: url('https://media.istockphoto.com/photos/pears-picking-in-portugal-picture-id1267585548?b=1&k=20&m=1267585548&s=170667a&w=0&h=e2Jcn2gJlIgkNiGMLsPqNg4GEsD71jRgWI0ApspiP0E=');-->
+<!--            "-->
+<!--            >-->
+<!--                <h3>Pear</h3>-->
+<!--            </div>-->
+<!--            <div-->
+<!--                    class="slides"-->
+<!--                    style="-->
+<!--              background-image: url('https://media.istockphoto.com/photos/lemon-with-clipping-path-picture-id155376515?b=1&k=20&m=155376515&s=170667a&w=0&h=TBwJFL9VRaiPye15s0A_YenyBXTjcvhyPXA8tMMgyq0=');-->
+<!--            "-->
+<!--            >-->
+<!--                <h3>Lemon</h3>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--    </div>-->
+</div>
+
+<script src="app.js"></script>
+<script src="app_slider.js"></script>
+<script src="app_date.js"></script>
+
+</body>
+</html>
